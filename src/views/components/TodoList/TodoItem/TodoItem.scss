@@ -1,0 +1,40 @@
+.todo {
+  &__item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  &__check {
+    width: 70%;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      flex-grow: 1;
+    }
+  }
+
+  &__label {
+
+    &--completed {
+      text-decoration: line-through;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  button {
+    height: 2rem;
+  }
+}

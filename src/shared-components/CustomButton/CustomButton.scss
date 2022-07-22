@@ -1,0 +1,46 @@
+.c-btn {
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  width: 5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0;
+  border: none;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &--primary {
+    background-color: purple;
+    color: white;
+  
+    &:hover {
+      background-color: transparent;
+      border: 1px solid purple;
+      color: black;
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    border: 1px solid purple;
+    color: black;
+  
+    &:hover {
+      background-color: purple;
+      color: white;
+    }
+  }
+  
+  &--submit {
+    background-color: green;
+    color: white;
+  
+    &:hover {
+      background-color: transparent;
+      border: 1px solid green;
+      color: black;
+    }
+  }
+}
